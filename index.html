@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/lib/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="static/lib/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+    <body>
+      <div class="wrapper">
+        <div class="menu">
+          <div class="nav nav-0">
+            <button class="menu-btn" value="0"><img class="btn-icon" src="static/img/general/play_circle_outline.svg" alt=""></button>
+            <div class="ungle"></div>
+          </div>
+          <div class="nav nav-1">        
+            <button class="menu-btn" value="1"><img class="btn-icon" src="static/img/general/photo_library.svg" alt=""></button>
+            <div class="ungle"></div>
+          </div>
+          <div class="nav nav-2">      
+            <button class="menu-btn" value="2"><img class="btn-icon" src="static/img/general/radio_button_checked.svg" alt=""></button>
+            <div class="ungle"></div>
+          </div>
+          <div class="nav nav-3">
+            <button class="menu-btn" value="3"><img class="btn-icon" src="static/img/general/show_chart.svg" alt=""></button>
+            <div class="ungle"></div>
+          </div>
+        </div>
+        <div class="popup">
+          <div class="modal">
+            <div class="closeNotif">x</div>
+            <div class="modal-content">
+              <h1>Hello! </h1>
+              <p>I`m a modal popup!</p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="video-block block">
+            <div class="text-block"><span class="txt-larger">This is app for nothing</span><span class="txt-smaller">Made by Artem Rebryk</span></div>
+            <video class="video resize" width="100%" height="auto" autoplay muted loop>
+              <source src="static/video/Industrial_Brooklyn.mp4" type="video/mp4">
+              <source src="static/video/Industrial_Brooklyn.webm" type="video/webm"><img src="static/video/Industrial_Brooklyn.jpg" alt="">
+            </video>
+          </div>
+          <div class="gallery-block block">
+            <div class="slider"> 
+              <div class="slide-item"><img class="i resize" src="static/img/alberto-restifo-95349-unsplash.jpg" alt=""></div>
+              <div class="slide-item"> <img class="i resize" src="static/img/liam-pozz-325640-unsplash.jpg" alt=""></div>
+              <div class="slide-item"><img class="i resize" src="static/img/rory-hennessey-345299-unsplash.jpg" alt=""></div>
+              <div class="slide-item"> <img class="i resize" src="static/img/nattu-adnan-328570-unsplash.jpg" alt=""></div>
+              <div class="slide-item"><img class="resize" src="static/img/willian-west-346731-unsplash.jpg" alt=""></div>
+              <div class="slide-item"> <img class="resize" src="static/img/josh-bean-348474-unsplash.jpg" alt=""></div>
+              <div class="slide-item"><img class="resize" src="static/img/john-baker-349282-unsplash.jpg" alt=""></div>
+              <div class="slide-item"> <img class="resize" src="static/img/prometey-sanchez-noskov-340992-unsplash.jpg" alt=""></div>
+              <div class="slide-item"><img class="resize" src="static/img/wil-stewart-16060-unsplash.jpg" alt=""></div>
+              <div class="slide-item"> <img class="resize" src="static/img/patrick-tomasso-406271-unsplash.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="button-block block">
+            <div class="modal-btn">
+              <button class="openPopup">Hello!</button>
+            </div>
+          </div>
+          <div class="chart-block block">
+            <div class="chart">
+              <canvas class="canvas" id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/libs.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+  </head>
+</html>
