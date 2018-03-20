@@ -40,7 +40,7 @@ function Controller(model, view) {
     function navigateScroll() {
         var to = $(this).val();
         var h = document.documentElement.clientHeight;
-        $(window).scrollTop(+to * h + 1);
+        $(window).scrollTop(+to * +h + 1);
         return checkScroll();
     }
 
@@ -48,7 +48,7 @@ function Controller(model, view) {
         var h = document.documentElement.clientHeight
         var w = document.documentElement.clientWidth
         var resize = $('.resize')
-        if ((w / h) < 2) {
+        if ((+w / +h) <= 1.89) {
             resize.removeClass('resize-x')
         } else {
             resize.addClass('resize-x')
