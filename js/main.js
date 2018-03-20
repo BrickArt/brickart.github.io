@@ -32,6 +32,10 @@ function Controller(model, view) {
     $('.popup').on('click', view.closeModalPopup);
     $('.closeNotif').on('click', view.closeModalPopup);
     $('.menu-btn').on('click', view.navigateScroll);
+
+    $(window).on('scroll', function () {
+        return checkScroll()
+    })
     
     function navigateScroll() {
         var to = $(this).val();
