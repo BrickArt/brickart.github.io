@@ -2,78 +2,41 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Главная страница</title>
+    <title>Artem Rebryk</title>
     <meta http-equiv="X-UA-Compatible" content="IE = edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="static/lib/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="static/lib/slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.css"><!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
     <body>
       <div class="wrapper">
-        <div class="menu">
-          <div class="nav nav-0">
-            <button class="menu-btn" value="0"><img class="btn-icon" src="static/img/general/play_circle_outline.svg" alt=""></button>
-            <div class="ungle"></div>
-          </div>
-          <div class="nav nav-1">        
-            <button class="menu-btn" value="1"><img class="btn-icon" src="static/img/general/photo_library.svg" alt=""></button>
-            <div class="ungle"></div>
-          </div>
-          <div class="nav nav-2">      
-            <button class="menu-btn" value="2"><img class="btn-icon" src="static/img/general/radio_button_checked.svg" alt=""></button>
-            <div class="ungle"></div>
-          </div>
-          <div class="nav nav-3">
-            <button class="menu-btn" value="3"><img class="btn-icon" src="static/img/general/show_chart.svg" alt=""></button>
-            <div class="ungle"></div>
-          </div>
-        </div>
-        <div class="popup">
-          <div class="modal">
-            <div class="closeNotif">x</div>
-            <div class="modal-content">
-              <h1>Hello! </h1>
-              <p>I`m a modal popup!</p>
+        <div class="main">
+          <div class="description">
+            <h1>Hello! </h1>
+            <h2>It`s test-quest for WoxApp!</h2>
+            <div class="author">
+              <p>Artem Rebryk </p>
+              <p>(web developer)</p>
             </div>
           </div>
-        </div>
-        <div class="content">
-          <div class="video-block block">
-            <div class="text-block"><span class="txt-larger">This is app for nothing</span><span class="txt-smaller">Made by Artem Rebryk</span></div>
-            <video class="video resize" width="100%" height="auto" autoplay muted loop>
-              <source src="static/video/Industrial_Brooklyn.mp4" type="video/mp4">
-              <source src="static/video/Industrial_Brooklyn.webm" type="video/webm">
-            </video><img src="static/video/Industrial_Brooklyn.jpg" alt="">
-          </div>
-          <div class="gallery-block block">
-            <div class="slider"> 
-              <div class="slide-item"><img class="i resize" src="static/img/john-baker-349282-unsplash.jpg" alt=""></div>
-              <div class="slide-item"> <img class="i resize" src="static/img/josh-bean-348474-unsplash.jpg" alt=""></div>
-              <div class="slide-item"><img class="i resize" src="static/img/nattu-adnan-328570-unsplash.jpg" alt=""></div>
-              <div class="slide-item"> <img class="i resize" src="static/img/patrick-tomasso-406271-unsplash.jpg" alt=""></div>
-              <div class="slide-item"><img class="resize" src="static/img/prometey-sanchez-noskov-340992-unsplash.jpg" alt=""></div>
-              <div class="slide-item"> <img class="resize" src="static/img/rory-hennessey-345299-unsplash.jpg" alt=""></div>
-              <div class="slide-item"><img class="resize" src="static/img/willian-west-346731-unsplash.jpg" alt=""></div>
-              <div class="slide-item"> <img class="resize" src="static/img/wil-stewart-16060-unsplash.jpg" alt=""></div>
-            </div>
-          </div>
-          <div class="button-block block">
-            <div class="modal-btn">
-              <button class="openPopup">Hello!</button>
-            </div>
-          </div>
-          <div class="chart-block block">
-            <div class="chart">
-              <canvas class="canvas" id="myChart"></canvas>
+          <div class="page-menu">
+            <h3>Here is two completed job</h3>
+            <div class="btn">
+              <article><a href="https://artemrebryk.herokuapp.com">
+                  <button class="btn-table" type="button">See table App!</button></a>
+                <div class="repos"><a href="https://github.com/BrickArt/woxapp-table">Client app repository (Angular)</a><a href="https://github.com/BrickArt/test-for-woxapp">Server app repository (Node.js)</a></div>
+              </article>
+              <article><a href="page/index.html">
+                  <button class="btn-page" type="button">See static page!</button></a>
+                <div class="repos"><a href="https://github.com/BrickArt/app-for-nothing">Page repository</a></div>
+              </article>
             </div>
           </div>
         </div>
       </div>
-      <script src="js/libs.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-      <script src="js/main.js"></script>
+      <script src="static/js/jquery.js"></script>
+      <script src="static/js/libs.min.js"></script>
+      <script src="static/js/main.js"></script>
     </body>
   </head>
 </html>
